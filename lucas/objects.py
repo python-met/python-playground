@@ -4,8 +4,18 @@ class station:
         station.temperature = temperature
         station.dew_point = dew_point
 
-station1 = station("Omaha", 75, 50)
+omaha_station = station("Omaha", 75, 50)
+kansas_city_station = station("Kansas City", 80, 55)
+oklahoma_city_station = station("Oklahoma city", 90, 60)
 
-print(station1.name)
-print(station1.temperature)
-print(station1.dew_point)
+print(omaha_station.name)
+print(omaha_station.temperature)
+print(omaha_station.dew_point)
+
+print(kansas_city_station.name)
+print(kansas_city_station.temperature)
+print(kansas_city_station.dew_point)
+
+print(oklahoma_city_station.name)
+print(oklahoma_city_station.temperature)
+print(oklahoma_city_station.dew_point)
