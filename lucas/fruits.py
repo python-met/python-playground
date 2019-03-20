@@ -8,3 +8,5 @@ for index in list:
         print("it is an apple")
     else:
         print("it is not an apple")
+
+for p in list: print(p)

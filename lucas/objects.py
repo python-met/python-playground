@@ -19,3 +19,8 @@ print(kansas_city_station.dew_point)
 print(oklahoma_city_station.name)
 print(oklahoma_city_station.temperature)
 print(oklahoma_city_station.dew_point)
+
+stations = [omaha_station.name, kansas_city_station.name, oklahoma_city_station.name]
+
+print("the stations are")
+for items in list: print(items)
