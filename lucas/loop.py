@@ -1,6 +1,8 @@
-index = 0
-size = 2
+size = int(input("What size of list do you want? "))
 
+list = []
 
 for index in range(size):
-    print(index)
+    index = int(input("what do you want in index %s ? " %index))
+
+for index in range(size): print(index)
