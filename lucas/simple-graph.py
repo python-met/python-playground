@@ -1,15 +1,28 @@
-# making a simple graph with matplotlib
+## making a simple graph with matplotlib
 
+# matplotlib.pyplot always aliased as plt
 import matplotlib.pyplot as plt
-import numpy
 
-figure = plt.figure()
+# define x and y with lists
+x = [1,2,3]
+y = [1,4,9]
 
-# graph title
-figure.suptitle('Axis Here')
+x2 = [1,5,6]
+y2 = [2,4,4]
 
-# 2 x 2 grid of axis
-figure, ax_list = plt.subplots(2, 2)
+# plot x, x2, y, y2
+plt.plot(x, y, label='1st series')
+plt.plot(x2, y2, label='2nd series')
 
-# print graph when invoked from CLI
-plt.show(figure)
+# set labels
+plt.xlabel('x label')
+plt.ylabel('y label')
+
+#label axis, title
+plt.xlabel('x label')
+plt.ylabel('y label')
+plt.title('title \nSub-title')
+
+#display graph and legend
+plt.legend()
+plt.show()
