@@ -1,13 +1,13 @@
-# determine size of list
+# empty list
+list = []
 
-size = int(input("What size of list do you want? "))
-# Populate list
-for index in range(size):
-    index = int(input("what do you want in index %s ? " %index))
+# number of elements as input
+size = int(input("Enter number of elements: \n"))
 
-print("Here is the arrray:")
-# for index in range(size): print(index)
+for i in range(0, size):
+    print("enter value",i+1,": ")
+    ele = int(input())
+    list.append(ele)
 
-# Print conents of list
-for index in range(size):
-    print()
+print("contents of your list: {}".format(list))
+#print(*list)
