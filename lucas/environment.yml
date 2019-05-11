@@ -1,0 +1,22 @@
+# environment.yml
+# this file describes the conda environment
+
+name: python-lucas
+dependencies:
+ - python>=3.7
+ - numpy
+ - matplotlib
+ - cartopy>=0.17
+ - jupyter
+ - jupyterlab
+ - netcdf4
+ - owslib
+ - metpy
+ - pint<=0.8.1
+ - shapely
+ - siphon
+ - xarray
+ - pip
+ - ffmpeg
+ - pytest
+ - mplcursors
