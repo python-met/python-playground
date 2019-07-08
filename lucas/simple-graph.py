@@ -2,26 +2,28 @@
 
 # matplotlib.pyplot always aliased as plt
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FormatStrFormatter
 
 # define x and y with lists
-x = [1,2,3,4,5,6,7,8,9]
-y = [1,4,9,9,5,4,3,4,6]
+# x = hours
+# y = mb
+ne_time = [1,2,3,4,5,6,7,8,9]
+ne_press = [908, 860, 1083, 1041, 1000, 999, 880, 897, 978]
 
-x2 = [1,5,6]
-y2 = [2,4,4]
+ks_time = [1,2,3,4,5,6,7,8,9]
+ks_press = [910, 968, 1099, 1051, 1041, 1000, 890, 894, 977]
 
 # plot x, x2, y, y2
-plt.plot(x, y, label='1st series')
-plt.plot(x2, y2, label='2nd series')
+plt.plot(ks_time, ks_press, label='Kansas')
+plt.plot(ne_time, ne_press, label='Nebraska')
 
-# set labels
-plt.xlabel('time')
-plt.ylabel('pressure')
-
-#label axis, title
-plt.xlabel('x label')
-plt.ylabel('y label')
-plt.title('title \nSub-title')
+# label axis, title
+# plt.xlabel('hours')
+# format x axis as hours
+plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%d hr'))
+# plt.ylabel('mb')
+plt.title('Nebraska & Kansas Pressure')
+plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%d mb'))
 
 #display graph and legend
 plt.legend()
